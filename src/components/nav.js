@@ -27,10 +27,10 @@ function Nav() {
             </li>
             <li>
               <a
-                href="#"
+                href="drinks"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-black"
               >
-                About
+                Drinks
               </a>
             </li>
           </ul>

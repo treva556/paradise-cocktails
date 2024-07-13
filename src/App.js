@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import pic66 from './assets/pic66.jpeg'; 
 import Nav from './components/nav';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
-       <header className="p-6">
+       <header className="p-3">
         <Nav/>
         <div className="relative w-full h-80 rounded-3xl">
             <img
@@ -24,20 +25,22 @@ function App() {
       </header>
       <div className=' pb font-mono '>
         <p className=' p-6'>
-        MARLOCA EAST BEACH CLUB is a destination and place to experience the beach in a jovial way. Where we have beautiful sunsets, great music, direct access to the beach, water sports activities and drinks prepared by the most talented mixologists
+        MARLOCA WEST BEACH CLUB is a destination and place to experience the beach in a jovial way. Where we have beautiful sunsets, great music, direct access to the beach, water sports activities and drinks prepared by the most talented mixologists
         </p>
-        <div className=' pb p-20'>
-        pwww
+        <div className=' pb p-4'>
+          SUNSETS
       </div>
       <div className='p-20'>
-        pwww
+        WATERSPORTS
+      </div>
+      <div className=' pb p-12'>
+          TOP DRINKS
       </div>
 
-<p>jjj</p>
-
 
 
       </div>
+      <Footer/>
     </div>
   );
 }

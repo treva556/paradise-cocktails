@@ -10,6 +10,7 @@ import ctail from '../assets/cocktail.jpeg';
 import dj from '../assets/dj.jpeg';
 import neg from '../assets/negroni.jpeg';
 import prp  from '../assets/prp.jpeg';
+import Mar from '../assets/mar.png';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -95,27 +96,32 @@ function Home() {
 
           
           <div className=' grid grid-cols-3 p-2 py-4 gap-4 '>
-          <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
+          <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64  md:w-32 md:h-40">
             <img
                 src={neg}
                 alt="Example"
                 className="w-full h-full object-cover rounded-xl"
             />
+            Negroni
         </div>
-        <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
+        <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
             <img
-                src={neg}
+                src={Mar}
                 alt="Example"
                 className="w-full h-full object-cover rounded-xl"
             />
+            Martini
         </div>
-        <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
-            <img
-                src={prp}
-                alt="Example"
-                className="w-full h-full object-cover rounded-xl"
-            />
-        </div>
+        <div className='border border-b-red-700 border-orange-50 p-2'>
+  <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
+    <img
+      src={prp}
+      alt="Example"
+      className="w-full h-full object-cover rounded-t-xl"
+    />
+  </div>
+  <p className="mt-2">P.Rum Punch</p>
+</div>
           </div>
           </div>
           <div className='text-center mt-4'>

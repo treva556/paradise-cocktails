@@ -85,22 +85,40 @@ function Home() {
 
      </div>
 
-
-
-
-    <div className=' pb p-12'>
+    <div className=' pb p-4'>
           TOP DRINKS
+          <div className=' grid grid-cols-3 p-2 py-4'>
+             <div className=' h-40 w-20 bg-red-700'>
+1
+            </div>
+            <div className=' h-40 w-20 bg-red-700'>
+2
+            </div>
+            <div className=' h-40 w-20 bg-red-700'>
+3
+            </div>
+          </div>
+          <button class="bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded">
+        View Full Menu
+        </button>
+            </div>
+
+            <div>
+        <div className=' bg-red-300 p-4 grid grid-cols-1 lg:grid-cols-2'>
+         <div className=' p-3'>
+            Sunsets
+            </div> 
+            <div className=' p-3'>
+            Sunsets Image
+            </div> 
       </div>
-
-
-
-
-    <div>
-        <div className=' bg-red-300 p-4'>
-          SUNSETS
-      </div>
-      <div className=' bg-blue-300 p-20'>
-        WATERSPORTS
+      <div className=' bg-blue-300 p-4 grid grid-cols-1 lg:grid-cols-2'>
+         <div className=' p-3'>
+            Watersports Image
+            </div> 
+            <div className=' p-3'>
+            Watersports
+            </div> 
       </div>
     
       </div>

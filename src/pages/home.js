@@ -10,6 +10,7 @@ import ctail from '../assets/cocktail.jpeg';
 import dj from '../assets/dj.jpeg';
 import neg from '../assets/negroni.jpeg';
 import prp  from '../assets/prp.jpeg';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -117,9 +118,13 @@ function Home() {
         </div>
           </div>
           </div>
-          <button class="bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded">
-        View Full Menu
-        </button>
+          <div className='text-center mt-4'>
+        <Link to="/menu">
+          <button className='bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded'>
+            View Full Menu
+          </button>
+        </Link>
+      </div>
             </div>
 
             <div>

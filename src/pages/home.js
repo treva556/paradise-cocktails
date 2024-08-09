@@ -87,7 +87,10 @@ function Home() {
 
     <div className=' pb p-4'>
           TOP DRINKS
-          <div className=' grid grid-cols-3 p-2 py-4'>
+          <div className=' flex justify-center'>
+
+          
+          <div className=' grid grid-cols-3 p-2 py-4 gap-4 '>
              <div className=' h-40 w-20 bg-red-700'>
 1
             </div>
@@ -97,6 +100,7 @@ function Home() {
             <div className=' h-40 w-20 bg-red-700'>
 3
             </div>
+          </div>
           </div>
           <button class="bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded">
         View Full Menu

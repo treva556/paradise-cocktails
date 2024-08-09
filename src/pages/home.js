@@ -33,7 +33,7 @@ function Home() {
         </p>
     </div>
 
-     <div className=' grid bg-slate-500 grid-cols-2'>
+     <div className=' grid bg-slate-500 grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
      <div className='p-12'>
           Bar Image
       </div>
@@ -49,7 +49,7 @@ function Home() {
 
      </div>
 
-     <div className=' grid bg-yellow-500 grid-cols-2'>
+     <div className=' grid bg-yellow-500 grid-cols-2 '>
      <div className='p-12'>
          Music
       </div>

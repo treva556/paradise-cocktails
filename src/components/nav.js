@@ -19,19 +19,19 @@ function Nav() {
             </li>
             <li>
               <a
-                href="/services"
+                href="/menu"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-black"
               >
                 Menu
               </a>
             </li>
             <li>
-              <a
+              {/* <a
                 href="drinks"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-black"
-              >
+              > */}
                 Drinks
-              </a>
+              {/* </a> */}
             </li>
           </ul>
         </div>
@@ -41,3 +41,5 @@ function Nav() {
 }
 
 export default Nav;
+
+

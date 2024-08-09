@@ -4,6 +4,9 @@ import '../App.css';
 import pic66 from '../assets/pic66.jpeg'; 
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import bar from '../assets/bar.jpeg';
+import beach from '../assets/beach.jpeg';
+import ctail from '../assets/cocktail.jpeg';
 
 function Home() {
   return (
@@ -28,37 +31,49 @@ function Home() {
         </div>
       </header>
       <div className=' pb font-mono '>
-        <p className=' px-24 pt-6'>
+        <p className=' px-10 pb-4 pt-6'>
         MARLOCA WEST BEACH CLUB is a destination and place to experience the beach in a jovial way. Where we have beautiful sunsets, great music, direct access to the beach, water sports activities and drinks prepared by the most talented mixologists
         </p>
     </div>
 
-     <div className=' grid bg-slate-500 grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
-     <div className='p-12'>
-          Bar Image
-      </div>
+     <div className=' grid pb grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+     <div className="relative w-full h-60 rounded-3xl">
+            <img
+                src={bar}
+                alt="Example"
+                className="w-full h-full object-cover rounded-3xl"
+            />
+        </div>
       <div className='p-12'>
           Bar
       </div>
-      <div className='p-12'>
-          Beach Image
+      <div className='p-12 border border-t-rose-800'>
+          Beach 
       </div>
-      <div className='p-12'>
-          Beach
-      </div>
+      <div className="relative w-full h-60 rounded-3xl">
+            <img
+                src={beach}
+                alt="Example"
+                className="w-full h-full object-cover rounded-3xl"
+            />
+        </div>
 
      </div>
 
-     <div className=' grid bg-yellow-500 grid-cols-2 '>
+     <div className=' grid br grid-cols-2 '>
      <div className='p-12'>
          Music
       </div>
       <div className='p-12'>
           Music Image
       </div>
-      <div className='p-12'>
-          Cocktail Image
-      </div>
+      <div className="relative w-full h-60 rounded">
+            <img
+                src={ctail}
+                alt="Example"
+                className="w-full h-full object-cover rounded"
+            />
+        </div>
       <div className='p-12'>
           Cocktail
       </div>

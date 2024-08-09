@@ -25,14 +25,14 @@ function Nav() {
                 Menu
               </a>
             </li>
-            <li>
+            {/* <li>
               {/* <a
                 href="drinks"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-black"
               > */}
-                Drinks
-              {/* </a> */}
-            </li>
+                {/* Drinks */}
+              {/* </a> 
+            </li> */}
           </ul>
         </div>
       </nav>

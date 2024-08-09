@@ -8,6 +8,8 @@ import bar from '../assets/bar.jpeg';
 import beach from '../assets/beach.jpeg';
 import ctail from '../assets/cocktail.jpeg';
 import dj from '../assets/dj.jpeg';
+import neg from '../assets/negroni.jpeg';
+import prp  from '../assets/prp.jpeg';
 
 function Home() {
   return (
@@ -36,8 +38,8 @@ function Home() {
         MARLOCA WEST BEACH CLUB is a destination and place to experience the beach in a jovial way. Where we have beautiful sunsets, great music, direct access to the beach, water sports activities and drinks prepared by the most talented mixologists
         </p>
     </div>
-
-     <div className=' grid pb grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2'>
+<div className=' pb'>
+     <div className=' grid pb grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:ml-96 lg:mr-96 px-2'>
      <div className="relative w-full h-60 rounded-3xl">
             <img
                 src={bar}
@@ -45,10 +47,10 @@ function Home() {
                 className="w-full h-full object-cover rounded-3xl"
             />
         </div>
-      <div className='p-4 lg:border border-red-800'>
+      <div className='p-4 sm:border border-b-red-800'>
           club
       </div>
-      <div className='p-4 md:border border-t-red-900 lg:border border-rose-800'>
+      <div className='p-4 '>
           Beach 
       </div>
       <div className="relative w-full h-60 rounded-3xl">
@@ -59,6 +61,7 @@ function Home() {
             />
         </div>
 
+     </div>
      </div>
 
      <div className=' grid br grid-cols-2 pt-6 px-2 lg:grid-cols-4 lg:gap-2 pb-2 '>
@@ -91,15 +94,27 @@ function Home() {
 
           
           <div className=' grid grid-cols-3 p-2 py-4 gap-4 '>
-             <div className=' h-40 w-20 bg-red-700'>
-1
-            </div>
-            <div className=' h-40 w-20 bg-red-700'>
-2
-            </div>
-            <div className=' h-40 w-20 bg-red-700'>
-3
-            </div>
+          <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
+            <img
+                src={neg}
+                alt="Example"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        </div>
+        <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
+            <img
+                src={neg}
+                alt="Example"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        </div>
+        <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64">
+            <img
+                src={prp}
+                alt="Example"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        </div>
           </div>
           </div>
           <button class="bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded">

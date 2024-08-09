@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import bar from '../assets/bar.jpeg';
 import beach from '../assets/beach.jpeg';
 import ctail from '../assets/cocktail.jpeg';
+import dj from '../assets/dj.jpeg';
 
 function Home() {
   return (
@@ -36,7 +37,7 @@ function Home() {
         </p>
     </div>
 
-     <div className=' grid pb grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+     <div className=' grid pb grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2'>
      <div className="relative w-full h-60 rounded-3xl">
             <img
                 src={bar}
@@ -44,10 +45,10 @@ function Home() {
                 className="w-full h-full object-cover rounded-3xl"
             />
         </div>
-      <div className='p-12'>
-          Bar
+      <div className='p-4 lg:border border-red-800'>
+          club
       </div>
-      <div className='p-12 border border-t-rose-800'>
+      <div className='p-4 md:border border-t-red-900 lg:border border-rose-800'>
           Beach 
       </div>
       <div className="relative w-full h-60 rounded-3xl">
@@ -60,13 +61,17 @@ function Home() {
 
      </div>
 
-     <div className=' grid br grid-cols-2 '>
+     <div className=' grid br grid-cols-2 pt-6 px-2 lg:grid-cols-4 lg:gap-2 pb-2 '>
      <div className='p-12'>
          Music
       </div>
-      <div className='p-12'>
-          Music Image
-      </div>
+      <div className="relative w-full h-60 rounded">
+            <img
+                src={dj}
+                alt="Example"
+                className="w-full h-full object-cover rounded"
+            />
+        </div>
       <div className="relative w-full h-60 rounded">
             <img
                 src={ctail}

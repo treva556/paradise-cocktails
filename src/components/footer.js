@@ -4,9 +4,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="App">
-      <nav className="border-gray-200 p-20 font-mono bg-blue-300">
-          FOOTER
+    <div className="w-full">
+      <nav className="border-gray-200 h-32 p-4 font-mono bg-red-500 flex items-start justify-center">
+        <span className="text-white">FOOTER</span>
       </nav>
     </div>
   );

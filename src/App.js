@@ -6,6 +6,9 @@ import Footer from './components/footer';
 
 function App() {
   return (
+    <div>
+
+    
     <div className="App">
        <header className="p-3">
         <Nav/>
@@ -39,6 +42,7 @@ function App() {
 
 
 
+      </div>
       </div>
       <Footer/>
     </div>

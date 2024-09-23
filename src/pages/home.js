@@ -8,6 +8,7 @@ import bar from '../assets/bar.jpeg';
 import beach from '../assets/beach.jpeg';
 import ctail from '../assets/cocktail.jpeg';
 import dj from '../assets/dj.jpeg';
+import Map from '../components/map';
 import neg from '../assets/negroni.jpeg';
 import prp from '../assets/prp.jpeg';
 import Mar from '../assets/mar.png';
@@ -91,6 +92,13 @@ function Home() {
             <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
           </div>
         </div>
+<div className=' pb'>
+<div className=" mx-24 pb">
+          <h1>Real-time Map in React</h1>
+          <Map /> {/* Render the Map component */}
+        </div>
+  </div>
+       
 
         <div className='pb p-4'>
           <h2 className="text-xl font-bold">Top Drinks</h2>

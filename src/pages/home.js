@@ -22,7 +22,7 @@ function Home() {
     dots: true,
     infinite: true,
     speed: 200,
-    slidesToShow: 2, // Show 2 slides at a time
+    slidesToShow: 2, 
     slidesToScroll: 1, 
     autoplay: true,
     autoplaySpeed: 2000
@@ -54,12 +54,13 @@ function Home() {
           </p>
         </div>
 
+
         <Slider {...settings}>
           <div className='p-12'>
             <h2 className="text-xl font-bold">Music</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
-          <div className="relative w-full h-60 rounded">
+          <div className="relative w-full h-96 rounded">
             <img
               src={dj}
               alt="DJ"
@@ -70,7 +71,7 @@ function Home() {
             <h2 className="text-xl font-bold">Cocktail</h2>
             <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
           </div>
-          <div className="relative w-full h-60 rounded">
+          <div className="relative w-full h-96 rounded">
             <img
               src={ctail}
               alt="Cocktail"
@@ -79,32 +80,10 @@ function Home() {
           </div>
         </Slider>
 
-        <div className='grid br grid-cols-2 pt-6 px-2 m-2 lg:grid-cols-4 lg:gap-2 pb-2'>
-          <div className='p-12'>
-            <h2 className="text-xl font-bold">Music</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
-          </div>
-          <div className="relative w-full h-60 rounded">
-            <img
-              src={dj}
-              alt="DJ"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
-          <div className="relative w-full h-60 rounded">
-            <img
-              src={ctail}
-              alt="Cocktail"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
-          <div className='p-12'>
-            <h2 className="text-xl font-bold">Cocktail</h2>
-            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
-          </div>
-        </div>
-<div className=' pb'>
-<div className=" mx-24 pb">
+
+
+        <div className=' pb'>
+        <div className=" mx-24 pb">
           <h1>Real-time Map in React</h1>
           <Map /> {/* Render the Map component */}
         </div>

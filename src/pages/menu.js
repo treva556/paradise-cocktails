@@ -12,6 +12,15 @@ function Menu() {
       <div className='pb p-16'>
         Menu Here
       </div>
+      <div>
+        starters
+        Main
+        desserts
+      </div>
+      <div>
+        cocktails
+        wines
+      </div>
     </div>
   );
 }

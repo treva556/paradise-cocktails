@@ -56,7 +56,7 @@ function Home() {
 
 
         <Slider {...settings}>
-          <div className='p-12'>
+          <div className='p-1 flex items-center justify-center pt-10'>
             <h2 className="text-xl font-bold">Music</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
@@ -67,13 +67,38 @@ function Home() {
               className="w-full h-full object-cover rounded"
             />
           </div>
-          <div className='p-12'>
+          <div className='p-1'>
             <h2 className="text-xl font-bold">Cocktail</h2>
             <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
           </div>
           <div className="relative w-full h-96 rounded">
             <img
               src={ctail}
+              alt="Cocktail"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+        </Slider>
+
+        <Slider {...settings}>
+          <div className='p-1'>
+            <h2 className="text-xl font-bold">Music</h2>
+            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={beach}
+              alt="DJ"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div className='p-1'>
+            <h2 className="text-xl font-bold">Cocktail</h2>
+            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={bar}
               alt="Cocktail"
               className="w-full h-full object-cover rounded"
             />

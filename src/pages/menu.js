@@ -7,9 +7,9 @@ function Menu() {
   return (
     <div className="App">
       <Nav />
-      <div className="p-16 bg-gray-100">
+      <div className="p-16 bg-gray-100 pb">
         <h1 className="text-4xl font-bold text-center mb-8">Our Menu</h1>
-
+           <h3 className=' text-red-500'> Sample Menu Mockup  </h3>
         {/* Starters Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-semibold mb-4">Starters</h2>

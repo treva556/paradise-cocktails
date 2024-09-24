@@ -31,6 +31,18 @@ function Home() {
     autoplaySpeed: 2000
   };
 
+
+   // Slider settings for customer reviews
+   const settingsReviews = {
+    dots: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1, // Show one review at a time
+    slidesToScroll: 1, // Scroll one review at a time
+    autoplay: true,
+    autoplaySpeed: 2500
+  };
+
   return (
     <div>
       <div className="App">
@@ -57,33 +69,30 @@ function Home() {
           </p>
         </div>
 
-      <div className=' pb'>
-
-
+        <div className=' pb'>
         <Slider {...settings}>
-        <div className='p-1 '>
-        <h2 className="text-xl font-bold">Restaurant</h2>
-        <p className="mt-2">Experience live music performances from top artists and DJs.</p>
-        </div>
-          <div className="relative w-full h-96 rounded order-first">
+          <div className='p-1'>
+            <h2 className="text-xl font-bold">Restaurant</h2>
+            <p className="mt-2">Indulge in a wide range of international cuisine prepared by our award-winning chefs.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
             <img
               src={bar}
-              alt="DJ"
-              className="w-full h-full object-cover order-first rounded"
+              alt="Restaurant"
+              className="w-full h-full object-cover rounded"
             />
-            
           </div>
          
           <div className="relative w-full h-96 rounded">
             <img
               src={food}
-              alt="DJ"
+              alt="Food"
               className="w-full h-full object-cover rounded"
             />
           </div>
-          <div className='p-1 '>
+          <div className='p-1'>
             <h2 className="text-xl font-bold">Food</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+            <p className="mt-2">Enjoy exquisite dishes crafted from fresh, locally sourced ingredients.</p>
           </div>
          
           <div className="relative w-full h-96 rounded">
@@ -94,38 +103,36 @@ function Home() {
             />
           </div>
           <div className='p-1'>
-            <h2 className="text-xl font-bold">Cocktail</h2>
-            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
+            <h2 className="text-xl font-bold">Cocktails</h2>
+            <p className="mt-2">Savor our expertly crafted cocktails, mixed with a blend of tropical and classic flavors.</p>
           </div>
         </Slider>
 
-
         <Slider {...settings}>
-          <div className='p-1 '>
+          <div className='p-1'>
             <h2 className="text-xl font-bold">Sunset</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+            <p className="mt-2">Watch the sunset while enjoying our signature cocktails with breathtaking ocean views.</p>
           </div>
           <div className="relative w-full h-96 rounded">
             <img
               src={Sun}
-              alt="DJ"
+              alt="Sunset"
               className="w-full h-full object-cover rounded"
             />
           </div>
-          <div className='p-1 '>
+          <div className='p-1'>
             <h2 className="text-xl font-bold">Watersports</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+            <p className="mt-2">Engage in thrilling water activities, from jet skiing to paddleboarding.</p>
           </div>
           <div className="relative w-full h-96 rounded">
             <img
               src={Water}
-              alt="DJ"
+              alt="Watersports"
               className="w-full h-full object-cover rounded"
             />
           </div>
-        
         </Slider>
-        </div>
+      </div>
 
 
         <div className=' pb flex gap-6 flex-col md:flex-row lg:flex-row text-red-500 justify-around p-12'>
@@ -210,9 +217,9 @@ function Home() {
          
         <div className='pb p-4'>
           <h2 className="text-xl font-bold">Weekly Specials</h2>
-           <div className='flex flex-col md:flex-row lg:flex-row justify-center'>
+           <div className='flex flex-col gap-6 md:flex-row lg:flex-row justify-center border pb1 md:border-r-red-500'>
 
-              <div className="relative w-full border border-red-700 h-56 rounded-xl ">
+              <div className="relative w-full md:w-1/2 lg:h-1/2 border border-red-700 h-56 rounded-xl ">
                 <img
                   src={food}
                   alt="Negroni"
@@ -233,6 +240,27 @@ function Home() {
               </div>
             </div>
           
+
+            <div className='pb p-4'>
+        <h2 className="text-xl font-bold">Meet the Team</h2>
+        <div className='grid grid-cols-3 gap-4'>
+          <div className="p-2">
+            <h3 className="text-lg font-semibold">Head Chef</h3>
+            <p>John Doe - Our head chef is a culinary maestro with over 20 years of experience in top kitchens worldwide.</p>
+          </div>
+          <div className="p-2">
+            <h3 className="text-lg font-semibold">Sous Chef</h3>
+            <p>Jane Smith - Assisting our head chef, Jane specializes in Mediterranean cuisine with a modern twist.</p>
+          </div>
+          <div className="p-2">
+            <h3 className="text-lg font-semibold">Bartender</h3>
+            <p>Michael Lee - A seasoned mixologist who brings creativity and flair to every cocktail he prepares.</p>
+          </div>
+        </div>
+      </div>
+
+
+
               
           
       <div>
@@ -284,13 +312,27 @@ function Home() {
 
       </div>
 
-      <div className=' flex flex-col md:flex-row lg:flex-row justify-around pb'>
-        <div>
-        <h4> The Best Customers </h4>
-        </div>
-        <div>
-          comments
-        </div>
+      {/* Customer Reviews Slider */}
+      <div className='pb p-4'>
+          <h2 className="text-xl font-bold">Customer Reviews</h2>
+          <Slider {...settingsReviews}>
+            <div className='p-2'>
+              <p className='italic'>"The atmosphere is amazing, and the drinks are to die for!"</p>
+              <p>- Sarah K.</p>
+            </div>
+            <div className='p-2'>
+              <p className='italic'>"An unforgettable beach experience with incredible food!"</p>
+              <p>- Tom L.</p>
+            </div>
+            <div className='p-2'>
+              <p className='italic'>"Simply the best sunset views I've ever seen."</p>
+              <p>- Maria J.</p>
+            </div>
+            <div className='p-2'>
+              <p className='italic'>"Excellent service and vibrant nightlife."</p>
+              <p>- David R.</p>
+            </div>
+          </Slider>
         </div>
 
         <div className=' text-5xl p-4 py-14 pb'>

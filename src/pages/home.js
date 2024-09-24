@@ -146,28 +146,23 @@ function Home() {
           <h4 className='hover:underline text-black font-semibold'>
              Contact us for reservations, bookings for events & deliveries 
              </h4>
-          <p> number</p>
           <div>
-           Phone: 
+           Phone: +254724569870
           </div>
           <div>
-           Email:
+           Email: marloccabeachbar@info.com
           </div>
         </div>
 
         <div className=''>
-          <h4 className='hover:underline text-black font-semibold '> Lunch </h4>
-          <p> number</p>
-          <div>
-           Phone: 
-          </div>
-          <h5 className=' hover:underline text-black font-semibold '>
-            Dinner
-          </h5>
-          <div>
-           Email:
-          </div>
-        </div>
+        <h4 className='hover:underline text-black font-semibold'> Lunch </h4>
+        <p className='text-gray-700'>Served from 12:00 PM - 3:00 PM</p>
+       
+
+        <h5 className='hover:underline text-black font-semibold mt-4'> Dinner </h5>
+        <p className='text-gray-700'>Served from 6:00 PM - 10:00 PM</p>
+        
+      </div>
       </div>
 
 
@@ -181,7 +176,7 @@ function Home() {
        
 
         <div className='pb p-4'>
-          <h2 className="text-xl font-bold">Top Drinks</h2>
+          <h2 className="text-xl font-bold mt-6 mb-5">Top Drinks</h2>
           <div className='flex justify-center'>
             <div className='grid grid-cols-3 p-2 py-4 gap-4'>
               <div className="relative  w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
@@ -216,7 +211,7 @@ function Home() {
         
          
         <div className='pb p-4'>
-          <h2 className="text-xl font-bold">Weekly Specials</h2>
+          <h2 className="text-xl font-bold mt-4 mb-16">Weekly Specials</h2>
            <div className='flex flex-col gap-6 md:flex-row lg:flex-row justify-center border pb1 md:border-r-red-500'>
 
               <div className="relative w-full md:w-1/2 lg:h-1/2 border border-red-700 h-56 rounded-xl ">
@@ -226,56 +221,87 @@ function Home() {
                   className="w-full hover:scale-110 h-full object-cover rounded-xl"
                 />
                 </div>
-                <div className=' flex flex-col gap-2 mt-4'>
-                  <div className=' border-l-black border-4 border-red-500 bg-red-500'>
-                    Special Buggers wednesday
-                  </div>
-                  <div className='border-l-black border-4 border-red-500 bg-red-500'> 
-                    Happy Hour thursdays
-                  </div>
-                  <div className='border-l-black border-4 border-red-500 bg-red-500'>
-                  Happy Hour thursdays
-                  </div>
-                </div>
+                <div className='flex flex-col gap-4 mt-6'>
+          <div className='p-4 border-l-4 border-l-black border-4 border-red-500 bg-red-500 shadow-md'>
+            <h3 className='text-lg font-bold text-black'>
+              🔥 Special Buggers Wednesday 🔥
+            </h3>
+            <p className='text-sm text-gray-800'>
+              Come hungry, leave happy! Grab 2-for-1 on our signature juicy buggers all day. Every. Single. Wednesday.
+            </p>
+            <p className='text-xs italic text-gray-600'>
+              *Offer valid from 12pm to 9pm
+            </p>
+          </div>
+          
+          <div className='p-4 border-l-4 border-l-black border-4 border-red-500 bg-red-500 shadow-md'>
+            <h3 className='text-lg font-bold text-black'>
+              🍻 Happy Hour Thursdays 🍻
+            </h3>
+            <p className='text-sm text-gray-800'>
+              Thirsty Thursdays just got better! Enjoy half-off on all draft beers, cocktails, and wine. Plus, free snacks from 5pm - 7pm.
+            </p>
+            <p className='text-xs italic text-gray-600'>
+              *Available from 3pm to 9pm
+            </p>
+          </div>
+         
+          
+          <div className='p-4 border-l-4 border-red-400 bg-red-200 shadow-md'>
+            <h3 className='text-lg font-bold text-black'>
+              🎉 Weekend Kickoff 🎉
+            </h3>
+            <p className='text-sm text-gray-800'>
+              Start your weekend right with live music and a 20% discount on all menu items every Friday evening. Bring your friends!
+            </p>
+            <p className='text-xs italic text-gray-600'>
+              *Music starts at 7pm, discount valid all day
+            </p>
+          </div>
+        </div>
               </div>
             </div>
           
 
             <div className='pb p-4'>
-        <h2 className="text-xl font-bold">Meet the Team</h2>
-        <div className='grid grid-cols-3 gap-4'>
+        <h2 className="text-xl mb-4 font-bold">Meet the Team</h2>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
           <div className="p-2">
             <h3 className="text-lg font-semibold">Head Chef</h3>
-            <p>John Doe - Our head chef is a culinary maestro with over 20 years of experience in top kitchens worldwide.</p>
+            <p className=' font-semibold'>John Doe </p>
+            <p>  - Our head chef is a culinary maestro with over 20 years of experience in top kitchens worldwide.</p>
           </div>
           <div className="p-2">
-            <h3 className="text-lg font-semibold">Sous Chef</h3>
-            <p>Jane Smith - Assisting our head chef, Jane specializes in Mediterranean cuisine with a modern twist.</p>
+            <h3 className="text-lg font-bold">Sous Chef</h3>
+            <p className=' font-semibold'> Jane Smith </p>
+            <p>  - Assisting our head chef, Jane specializes in Mediterranean cuisine with a modern twist.</p>
           </div>
           <div className="p-2">
             <h3 className="text-lg font-semibold">Bartender</h3>
-            <p>Michael Lee - A seasoned mixologist who brings creativity and flair to every cocktail he prepares.</p>
+            <p className=' font-semibold'>Michael Lee</p>
+              <p> - A seasoned mixologist who brings creativity and flair to every cocktail he prepares.</p>
           </div>
         </div>
       </div>
 
 
 
-              
+{/*               
           
       <div>
          
-         <div className='pb p-4'>
+         <div className='pb'>
            <h2 className="text-xl font-bold"> Meet the Team </h2>
            <div className='flex justify-center'>
-             <div className='grid grid-cols-3 p-2 py-4 gap-4'>
+             <div className='grid grid-cols-3 py-4 gap-4'>
                <div className="relative  w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
                  <img
                    src={neg}
                    alt="Negroni"
                    className="w-full hover:scale-110 h-full object-cover rounded-xl"
                  />
-                 <p className="text-center mt-2">Negroni</p>
+                <h3 className="text-lg font-semibold">Head Chef</h3>
+                <p>John Doe - Our head chef is a culinary maestro with over 20 years of experience in top kitchens worldwide.</p>
                </div>
                <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
                  <img
@@ -283,7 +309,8 @@ function Home() {
                    alt="Martini"
                    className="w-full h-full  hover:scale-110 object-cover rounded-xl"
                  />
-                 <p className="text-center mt-2">Martini</p>
+                 <h3 className="text-lg font-semibold">Sous Chef</h3>
+                 <p>Jane Smith - Assisting our head chef, Jane specializes in Mediterranean cuisine with a modern twist.</p>
                </div>
                <div className='border border-b-red-700 border-amber-100'>
                  <div className="relative w-24 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
@@ -292,25 +319,28 @@ function Home() {
                      alt="P.Rum Punch"
                      className="w-full hover:scale-110 h-full object-cover rounded-t-xl"
                    />
+                    <h3 className="text-lg font-semibold text-red-500 pt-2">Bartender</h3>
+                    <p>Michael Lee - A seasoned mixologist who brings creativity and flair to every cocktail he prepares.</p>
                  </div>
-                 <p className="text-center mt-2">P.Rum Punch</p>
+                
                </div>
              </div>
            </div>
        </div>
        </div>
+       </div>
 
+</div> */}
 
-          <div className='text-center mt-4'>
+          <div className='text-center mt-6'>
             <Link to="/menu">
               <button className='bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded'>
                 View Full Menu
               </button>
             </Link>
           </div>
-        </div>
-
-      </div>
+       </div>
+       </div>
 
       {/* Customer Reviews Slider */}
       <div className='pb p-4'>
@@ -335,7 +365,7 @@ function Home() {
           </Slider>
         </div>
 
-        <div className=' text-5xl p-4 py-14 pb'>
+        <div className= 'font-serif text-5xl p-4 py-14 pb'>
           <p>
           Cold Beers
           <br/>

@@ -12,13 +12,13 @@ function Footer() {
 
       <div className='font-mono bg-red-500 text-orange-100 flex flex-col md:flex-row lg:flex-row items-start justify-around'>
           <div>
-         1
+         Quick Links
           </div>
           <div>
-         2
+         Contacts
           </div>
           <div>
-         3
+         Social Media Links
           </div>
         </div>
     </div>

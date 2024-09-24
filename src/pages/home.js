@@ -54,34 +54,20 @@ function Home() {
           </p>
         </div>
 
+<div className=' pb'>
+
+<div className=' flex justify-around p-2'>
+  <div>
+     <h3> Address </h3>
+     <p> Westlands</p>
+  </div>
+  <div>
+    <h4> Contact us for reservations, bookings for events & deliveries </h4>
+  </div>
+</div>
 
         <Slider {...settings}>
-          <div className='p-1 flex items-center justify-center pt-10'>
-            <h2 className="text-xl font-bold">Music</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
-          </div>
-          <div className="relative w-full h-96 rounded">
-            <img
-              src={dj}
-              alt="DJ"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
-          <div className='p-1'>
-            <h2 className="text-xl font-bold">Cocktail</h2>
-            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
-          </div>
-          <div className="relative w-full h-96 rounded">
-            <img
-              src={ctail}
-              alt="Cocktail"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
-        </Slider>
-
-        <Slider {...settings}>
-          <div className='p-1'>
+          <div className='p-1 '>
             <h2 className="text-xl font-bold">Music</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
@@ -104,7 +90,7 @@ function Home() {
             />
           </div>
         </Slider>
-
+        </div>
 
 
         <div className=' pb'>
@@ -147,6 +133,16 @@ function Home() {
               </div>
             </div>
           </div>
+
+        <div>
+          <h4> Weekly Specials </h4>
+        </div>
+
+        <div>
+          <h5> Meet the Team </h5>
+        </div>
+
+
           <div className='text-center mt-4'>
             <Link to="/menu">
               <button className='bg-blue-300 hover:bg-white hover:text-black text-white font-bold py-1 px-2 border border-blue-700 rounded'>
@@ -157,6 +153,22 @@ function Home() {
         </div>
 
       </div>
+
+      <div className=' pb'>
+          <h4> The Best Customers </h4>
+        </div>
+
+        <div className=' pb'>
+          <p>
+          Cold Beers
+          Late night Food
+          Real Good Cocktails
+
+          </p>
+        </div>
+
+
+
       <Footer />
     </div>
   );

@@ -59,16 +59,6 @@ function Home() {
 
       <div className=' pb'>
 
-      <div className=' flex flex-col md:flex-row lg:flex-row text-red-500 justify-around p-12'>
-        <div>
-          <h3> Address </h3>
-          <p> Westlands</p>
-        </div>
-        <div>
-          <h4> Contact us for reservations, bookings for events & deliveries </h4>
-          <p> number</p>
-        </div>
-      </div>
 
         <Slider {...settings}>
         <div className='p-1 '>
@@ -95,16 +85,17 @@ function Home() {
             <h2 className="text-xl font-bold">Food</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
-          <div className='p-1'>
-            <h2 className="text-xl font-bold">Cocktail</h2>
-            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
-          </div>
+         
           <div className="relative w-full h-96 rounded">
             <img
               src={ctail}
               alt="Cocktail"
               className="w-full h-full object-cover rounded"
             />
+          </div>
+          <div className='p-1'>
+            <h2 className="text-xl font-bold">Cocktail</h2>
+            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
           </div>
         </Slider>
 
@@ -137,15 +128,49 @@ function Home() {
         </div>
 
 
+        <div className=' pb flex gap-6 flex-col md:flex-row lg:flex-row text-red-500 justify-around p-12'>
+       
+        <div>
+          <h3 className=' hover:underline text-black font-semibold'> Address </h3>
+          <p> 20th Floor One Africa Place, Waiyaki Wy, Nairobi  </p>
+        </div>
+
+        <div className=' '>
+          <h4 className='hover:underline text-black font-semibold'>
+             Contact us for reservations, bookings for events & deliveries 
+             </h4>
+          <p> number</p>
+          <div>
+           Phone: 
+          </div>
+          <div>
+           Email:
+          </div>
+        </div>
+
+        <div className=''>
+          <h4 className='hover:underline text-black font-semibold '> Lunch </h4>
+          <p> number</p>
+          <div>
+           Phone: 
+          </div>
+          <h5 className=' hover:underline text-black font-semibold '>
+            Dinner
+          </h5>
+          <div>
+           Email:
+          </div>
+        </div>
+      </div>
 
 
 
         <div className=' pb'>
-        <div className="  pb p-1">
+         <div className="  pb p-1">
           <h1>Real-time Map in React</h1>
           <Map /> {/* Render the Map component */}
+         </div>
         </div>
-  </div>
        
 
         <div className='pb p-4'>
@@ -181,42 +206,34 @@ function Home() {
             </div>
           </div>
 
-        <div>
+        
          
         <div className='pb p-4'>
           <h2 className="text-xl font-bold">Weekly Specials</h2>
-          <div className='flex justify-center'>
-            <div className='grid grid-cols-3 p-2 py-4 gap-4'>
-              <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
+           <div className='flex flex-col md:flex-row lg:flex-row justify-center'>
+
+              <div className="relative w-full border border-red-700 h-56 rounded-xl ">
                 <img
-                  src={neg}
+                  src={food}
                   alt="Negroni"
                   className="w-full hover:scale-110 h-full object-cover rounded-xl"
                 />
-                <p className="text-center mt-2">Negroni</p>
-              </div>
-              <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
-                <img
-                  src={Mar}
-                  alt="Martini"
-                  className="w-full h-full  hover:scale-110 object-cover rounded-xl"
-                />
-                <p className="text-center mt-2">Martini</p>
-              </div>
-              <div className='border border-b-red-700 border-amber-100'>
-                <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
-                  <img
-                    src={prp}
-                    alt="P.Rum Punch"
-                    className="w-full hover:scale-110 h-full object-cover rounded-t-xl"
-                  />
                 </div>
-                <p className="text-center mt-2">P.Rum Punch</p>
+                <div className=' flex flex-col gap-2 mt-4'>
+                  <div className=' border-l-black border-4 border-red-500 bg-red-500'>
+                    Special Buggers wednesday
+                  </div>
+                  <div className='border-l-black border-4 border-red-500 bg-red-500'> 
+                    Happy Hour thursdays
+                  </div>
+                  <div className='border-l-black border-4 border-red-500 bg-red-500'>
+                  Happy Hour thursdays
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
-      </div>
+          
+              
           
       <div>
          

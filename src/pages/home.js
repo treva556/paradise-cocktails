@@ -284,7 +284,7 @@ function Home() {
         </div>
         </div>
 
-        <div className=' text-5xl p-4 pb'>
+        <div className=' text-5xl p-4 py-14 pb'>
           <p>
           Cold Beers
           <br/>

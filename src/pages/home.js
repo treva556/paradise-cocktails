@@ -94,7 +94,7 @@ function Home() {
 
 
         <div className=' pb'>
-        <div className=" mx-24 pb">
+        <div className=" mx-24 pb p-6">
           <h1>Real-time Map in React</h1>
           <Map /> {/* Render the Map component */}
         </div>

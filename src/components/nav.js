@@ -11,7 +11,7 @@ function Nav() {
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 text-black rounded hover:bg-gray-100 dark:text-black"
+                className="block py-2 px-3 text-black rounded hover:border border-red-500 dark:text-black"
                 aria-current="page"
               >
                 Home
@@ -20,7 +20,7 @@ function Nav() {
             <li>
               <a
                 href="/menu"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-black"
+                className="block py-2 px-3 text-gray-900 rounded hover:border border-red-500 dark:text-black"
               >
                 Menu
               </a>

@@ -25,7 +25,7 @@ const Map = () => {
     };
   }, []);
 
-  return <div id="map" style={{ height: '500px', width: '100%' }}></div>;
+  return <div id="map" style={{ height: '300px', width: '100%' }}></div>;
 };
 
 export default Map;

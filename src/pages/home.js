@@ -135,12 +135,78 @@ function Home() {
           </div>
 
         <div>
-          <h4> Weekly Specials </h4>
-        </div>
-
-        <div>
-          <h5> Meet the Team </h5>
-        </div>
+         
+        <div className='pb p-4'>
+          <h2 className="text-xl font-bold">Weekly Specials</h2>
+          <div className='flex justify-center'>
+            <div className='grid grid-cols-3 p-2 py-4 gap-4'>
+              <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
+                <img
+                  src={neg}
+                  alt="Negroni"
+                  className="w-full hover:scale-110 h-full object-cover rounded-xl"
+                />
+                <p className="text-center mt-2">Negroni</p>
+              </div>
+              <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
+                <img
+                  src={Mar}
+                  alt="Martini"
+                  className="w-full h-full  hover:scale-110 object-cover rounded-xl"
+                />
+                <p className="text-center mt-2">Martini</p>
+              </div>
+              <div className='border border-b-red-700 border-amber-100'>
+                <div className="relative w-36 h-56 rounded-xl lg:w-96 lg:h-104 md:w-56 md:h-80">
+                  <img
+                    src={prp}
+                    alt="P.Rum Punch"
+                    className="w-full hover:scale-110 h-full object-cover rounded-t-xl"
+                  />
+                </div>
+                <p className="text-center mt-2">P.Rum Punch</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+          
+      <div>
+         
+         <div className='pb p-4'>
+           <h2 className="text-xl font-bold"> Meet the Team </h2>
+           <div className='flex justify-center'>
+             <div className='grid grid-cols-3 p-2 py-4 gap-4'>
+               <div className="relative  w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
+                 <img
+                   src={neg}
+                   alt="Negroni"
+                   className="w-full hover:scale-110 h-full object-cover rounded-xl"
+                 />
+                 <p className="text-center mt-2">Negroni</p>
+               </div>
+               <div className="relative w-20 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
+                 <img
+                   src={Mar}
+                   alt="Martini"
+                   className="w-full h-full  hover:scale-110 object-cover rounded-xl"
+                 />
+                 <p className="text-center mt-2">Martini</p>
+               </div>
+               <div className='border border-b-red-700 border-amber-100'>
+                 <div className="relative w-24 h-32 rounded-xl lg:w-52 lg:h-64 md:w-32 md:h-40">
+                   <img
+                     src={ctail}
+                     alt="P.Rum Punch"
+                     className="w-full hover:scale-110 h-full object-cover rounded-t-xl"
+                   />
+                 </div>
+                 <p className="text-center mt-2">P.Rum Punch</p>
+               </div>
+             </div>
+           </div>
+       </div>
+       </div>
 
 
           <div className='text-center mt-4'>
@@ -154,14 +220,21 @@ function Home() {
 
       </div>
 
-      <div className=' pb'>
-          <h4> The Best Customers </h4>
+      <div className=' flex flex-col md:flex-row lg:flex-row justify-around pb'>
+        <div>
+        <h4> The Best Customers </h4>
+        </div>
+        <div>
+          comments
+        </div>
         </div>
 
-        <div className=' pb'>
+        <div className=' text-5xl p-4 pb'>
           <p>
           Cold Beers
+          <br/>
           Late night Food
+          <br/>
           Real Good Cocktails
 
           </p>

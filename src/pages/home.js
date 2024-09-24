@@ -4,10 +4,13 @@ import '../App.css';
 import pic66 from '../assets/pic66.jpeg'; 
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-import bar from '../assets/bar.jpeg';
+import bar from '../assets/bar.jpg';
 import beach from '../assets/beach.jpeg';
-import ctail from '../assets/cocktail.jpeg';
+import ctail from '../assets/cocktail.jpg';
 import dj from '../assets/dj.jpeg';
+import Sun from '../assets/sun.jpg';
+import Water from '../assets/water.jpg';
+import food from '../assets/food.jpg';
 import Map from '../components/map';
 import neg from '../assets/negroni.jpeg';
 import prp from '../assets/prp.jpeg';
@@ -23,7 +26,7 @@ function Home() {
     infinite: true,
     speed: 200,
     slidesToShow: 2, 
-    slidesToScroll: 1, 
+    slidesToScroll: 2, 
     autoplay: true,
     autoplaySpeed: 2000
   };
@@ -54,17 +57,18 @@ function Home() {
           </p>
         </div>
 
-<div className=' pb'>
+      <div className=' pb'>
 
-<div className=' flex justify-around p-2'>
-  <div>
-     <h3> Address </h3>
-     <p> Westlands</p>
-  </div>
-  <div>
-    <h4> Contact us for reservations, bookings for events & deliveries </h4>
-  </div>
-</div>
+      <div className=' flex flex-col md:flex-row lg:flex-row text-red-500 justify-around p-12'>
+        <div>
+          <h3> Address </h3>
+          <p> Westlands</p>
+        </div>
+        <div>
+          <h4> Contact us for reservations, bookings for events & deliveries </h4>
+          <p> number</p>
+        </div>
+      </div>
 
         <Slider {...settings}>
           <div className='p-1 '>
@@ -73,7 +77,18 @@ function Home() {
           </div>
           <div className="relative w-full h-96 rounded">
             <img
-              src={beach}
+              src={bar}
+              alt="DJ"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div className='p-1 '>
+            <h2 className="text-xl font-bold">Music</h2>
+            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={food}
               alt="DJ"
               className="w-full h-full object-cover rounded"
             />
@@ -84,13 +99,53 @@ function Home() {
           </div>
           <div className="relative w-full h-96 rounded">
             <img
-              src={bar}
+              src={ctail}
               alt="Cocktail"
               className="w-full h-full object-cover rounded"
             />
           </div>
         </Slider>
+
+
+        <Slider {...settings}>
+          <div className='p-1 '>
+            <h2 className="text-xl font-bold">Music</h2>
+            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={Sun}
+              alt="DJ"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+          <div className='p-1 '>
+            <h2 className="text-xl font-bold">Music</h2>
+            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={Water}
+              alt="DJ"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+          {/* <div className='p-1'>
+            <h2 className="text-xl font-bold">Cocktail</h2>
+            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
+          </div>
+          <div className="relative w-full h-96 rounded">
+            <img
+              src={beach}
+              alt="Cocktail"
+              className="w-full h-full object-cover rounded"
+            />
+          </div> */}
+        </Slider>
         </div>
+
+
+
 
 
         <div className=' pb'>

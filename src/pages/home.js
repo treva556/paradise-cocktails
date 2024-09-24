@@ -34,13 +34,13 @@ function Home() {
   return (
     <div>
       <div className="App">
-        <header className="p-3">
+        <header className="p-1 pb">
           <Nav />
-          <div className="relative w-full h-80 rounded-3xl">
+          <div className="relative w-full mt-2 h-80 rounded-3xl pb">
             <img
               src={pic66}
               alt="Example"
-              className="w-full h-full object-cover rounded-3xl"
+              className="w-full h-full object-cover pb rounded-3xl"
             />
             <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">
               MARLOCA WEST BEACH CLUB
@@ -71,27 +71,29 @@ function Home() {
       </div>
 
         <Slider {...settings}>
-          <div className='p-1 '>
-            <h2 className="text-xl font-bold">Music</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
-          </div>
-          <div className="relative w-full h-96 rounded">
+        <div className='p-1 '>
+        <h2 className="text-xl font-bold">Restaurant</h2>
+        <p className="mt-2">Experience live music performances from top artists and DJs.</p>
+        </div>
+          <div className="relative w-full h-96 rounded order-first">
             <img
               src={bar}
               alt="DJ"
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover order-first rounded"
             />
+            
           </div>
-          <div className='p-1 '>
-            <h2 className="text-xl font-bold">Music</h2>
-            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
-          </div>
+         
           <div className="relative w-full h-96 rounded">
             <img
               src={food}
               alt="DJ"
               className="w-full h-full object-cover rounded"
             />
+          </div>
+          <div className='p-1 '>
+            <h2 className="text-xl font-bold">Food</h2>
+            <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
           <div className='p-1'>
             <h2 className="text-xl font-bold">Cocktail</h2>
@@ -109,7 +111,7 @@ function Home() {
 
         <Slider {...settings}>
           <div className='p-1 '>
-            <h2 className="text-xl font-bold">Music</h2>
+            <h2 className="text-xl font-bold">Sunset</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
           <div className="relative w-full h-96 rounded">
@@ -120,7 +122,7 @@ function Home() {
             />
           </div>
           <div className='p-1 '>
-            <h2 className="text-xl font-bold">Music</h2>
+            <h2 className="text-xl font-bold">Watersports</h2>
             <p className="mt-2">Experience live music performances from top artists and DJs.</p>
           </div>
           <div className="relative w-full h-96 rounded">
@@ -130,17 +132,7 @@ function Home() {
               className="w-full h-full object-cover rounded"
             />
           </div>
-          {/* <div className='p-1'>
-            <h2 className="text-xl font-bold">Cocktail</h2>
-            <p className="mt-2">Savor our expertly crafted cocktails made by talented mixologists.</p>
-          </div>
-          <div className="relative w-full h-96 rounded">
-            <img
-              src={beach}
-              alt="Cocktail"
-              className="w-full h-full object-cover rounded"
-            />
-          </div> */}
+        
         </Slider>
         </div>
 
@@ -149,7 +141,7 @@ function Home() {
 
 
         <div className=' pb'>
-        <div className=" mx-24 pb p-6">
+        <div className="  pb p-1">
           <h1>Real-time Map in React</h1>
           <Map /> {/* Render the Map component */}
         </div>
